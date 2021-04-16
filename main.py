@@ -128,7 +128,7 @@ def DiscoverAllArtists():
         offsetvar2 += 50
 
 while True:
-    selection = input("Choose from 1.Discover Weekly 2.All Songs : ")
+    selection = input("Choose from 1. Discover Weekly 2. All Songs : ")
     if selection == "1":
         DiscoverWeeklyArtists()
         break
