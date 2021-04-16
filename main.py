@@ -16,6 +16,7 @@ import base64
 from io import BytesIO
 from dotenv import load_dotenv
 import os
+from pypmml import Model
 
 # Use your own spotify dev data below!
 # set open_browser=False to prevent Spotipy from attempting to open the default browser, authenticate with credentials
@@ -46,7 +47,14 @@ def uploadimage(toprint,playlist):
     img_str = base64.b64encode(buffered.getvalue())
     sp.playlist_upload_cover_image(playlist,img_str) 
 
-
+def getPlaylistID(playlist_name, username=usernamevar):
+    #Gets ID of playlist by name
+    playlist_id = 'error'
+    playlists = sp.user_playlists(username)
+    for playlist in playlists['items']:  # iterate through playlists user follows
+        if playlist['name'] == playlist_name:  # filter for newly created playlist
+            playlist_id = playlist['id']
+    return playlist_id
 
 def DiscoverWeeklyArtists():
     toprint = "Discover More " + today.strftime("%m/%d")
@@ -74,6 +82,11 @@ def DiscoverWeeklyArtists():
                 usedvalues.append(newsong2)
         except:
             pass
+    selection = input("Would you like to run auto-sort? (y/n) : ")
+    if selection == 'y':
+        sortLogistic(discoartisturi)
+    if selection == 'n':
+        pass
 
 def DiscoverAllArtists():
     toprint = "All Your Artists"
@@ -127,13 +140,57 @@ def DiscoverAllArtists():
                 break
         offsetvar2 += 50
 
+def sortLogistic(playlist_uri=discoartisturi, confidence=.3):
+    #sort songs based on generated logisitic regression
+    error_count = 0
+    model = Model.load('logistic_output_pmml.xml')
+    #model.inputNames = ["artist","releasedate","popularity","duration","tempo","time_signature","key","mode","loudness","acousticness","danceability","energy","instrumentalness","liveness","speechiness","valence"]
+
+    for song in sp.playlist_tracks(playlist_uri)["items"]:
+
+            song_data_input = []
+            try:
+                song_track = sp.track(song["track"]["id"])
+                song_features = sp.audio_features(song["track"]["id"])
+            except:
+                print("Error for track: ", song["track"]["name"])
+                error_count += 1
+                continue
+            song_data_input = [song_track["album"]["release_date"][:4], song_track["popularity"],song_features[0]["duration_ms"],song_features[0]["tempo"],song_features[0]["time_signature"],song_features[0]["key"],song_features[0]["mode"],song_features[0]["loudness"],song_features[0]["acousticness"],song_features[0]["danceability"],song_features[0]["energy"], song_features[0]["instrumentalness"],song_features[0]["liveness"],song_features[0]["speechiness"],song_features[0]["valence"]]
+
+            song_data_output = model.predict(song_data_input)
+            #pp(song_data_output)
+            
+            if song_data_output[1] > confidence:
+                #get playlist id
+                playlist_to_append = getPlaylistID(song_data_output[0].strip())
+                if playlist_to_append == 'error': #if playlist doesn't already exist
+                    print("Playlist not found: ",song_data_output[0].strip(), " ...creating new...")
+                    sp.user_playlist_create(usernamevar, song_data_output[0])
+                    playlist_to_append = getPlaylistID(song_data_output[0])
+                #add track
+                sp.user_playlist_add_tracks(usernamevar, playlist_to_append, [song_track["id"]])
+                #output
+                print("Sorted ",song_track["name"]," to playlist ",song_data_output[0].strip()," with confidence ",song_data_output[1])
+            else:
+                #failed - low confidence
+                print("Did NOT add ",song_track["name"]," to playlist ",song_data_output[0].strip()," with confidence ",song_data_output[1])
+                
+            #pp(model.outputNames)
+            
+
+
 while True:
-    selection = input("Choose from 1. Discover Weekly 2. All Songs : ")
+    selection = input("Choose from 1. Discover Weekly 2. All Songs 3. Sort only: ")
     if selection == "1":
         DiscoverWeeklyArtists()
         break
     elif selection == "2":
         DiscoverAllArtists()
+        break
+    elif selection == "3":
+        print("Running auto-sort for Discover More...")
+        sortLogistic()
         break
     else:
         print("Please enter number 1 or 2")

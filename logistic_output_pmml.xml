@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8"?><PMML xmlns="http://www.dmg.org/PMML-4_3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.3" xsi:schemaLocation="http://www.dmg.org/PMML-4_3 pmml-4-3.xsd">
+	<Header copyright="(C) Copyright IBM Corp. 1989, 2019.">
+		<Application name="IBM SPSS Statistics 27.0" version="27.0.0.0"/>
+	</Header>
+	<DataDictionary numberOfFields="16">
+		<DataField dataType="string" displayName=" playlist_name" name=" playlist_name" optype="categorical">
+			<Extension extender="spss.com" name="format" value="1"/>
+			<Extension extender="spss.com" name="width" value="15"/>
+			<Extension extender="spss.com" name="decimals" value="0"/>
+			<Value displayValue="  Lofi" property="valid" value="  Lofi"/>
+			<Value displayValue=" Acoustic" property="valid" value=" Acoustic"/>
+			<Value displayValue=" Chill" property="valid" value=" Chill"/>
+			<Value displayValue=" Classic" property="valid" value=" Classic"/>
+			<Value displayValue=" Classic Hip Hop" property="valid" value=" Classic Hip Hop"/>
+			<Value displayValue=" Classic Rock" property="valid" value=" Classic Rock"/>
+			<Value displayValue=" Classical" property="valid" value=" Classical"/>
+			<Value displayValue=" Country" property="valid" value=" Country"/>
+			<Value displayValue=" Drain" property="valid" value=" Drain"/>
+			<Value displayValue=" Dubstep" property="valid" value=" Dubstep"/>
+			<Value displayValue=" Funky" property="valid" value=" Funky"/>
+			<Value displayValue=" Groovy" property="valid" value=" Groovy"/>
+			<Value displayValue=" Hip Hop" property="valid" value=" Hip Hop"/>
+			<Value displayValue=" Jazz" property="valid" value=" Jazz"/>
+			<Value displayValue=" K-pop" property="valid" value=" K-pop"/>
+			<Value displayValue=" Lounge" property="valid" value=" Lounge"/>
+			<Value displayValue=" Metal" property="valid" value=" Metal"/>
+			<Value displayValue=" New Beats" property="valid" value=" New Beats"/>
+			<Value displayValue=" New Rock" property="valid" value=" New Rock"/>
+			<Value displayValue=" Opera" property="valid" value=" Opera"/>
+			<Value displayValue=" Pop Beats" property="valid" value=" Pop Beats"/>
+			<Value displayValue=" Pop Rock" property="valid" value=" Pop Rock"/>
+			<Value displayValue=" Popsish" property="valid" value=" Popsish"/>
+			<Value displayValue=" Power" property="valid" value=" Power"/>
+			<Value displayValue=" Progressive" property="valid" value=" Progressive"/>
+			<Value displayValue=" Psychedelic" property="valid" value=" Psychedelic"/>
+			<Value displayValue=" Psychedelic Pop" property="valid" value=" Psychedelic Pop"/>
+			<Value displayValue=" Punk" property="valid" value=" Punk"/>
+			<Value displayValue=" Punk Rock" property="valid" value=" Punk Rock"/>
+			<Value displayValue=" Rap" property="valid" value=" Rap"/>
+			<Value displayValue=" Relax" property="valid" value=" Relax"/>
+			<Value displayValue=" Rock" property="valid" value=" Rock"/>
+			<Value displayValue=" Slow Drain" property="valid" value=" Slow Drain"/>
+			<Value displayValue=" Soft" property="valid" value=" Soft"/>
+			<Value displayValue=" Soft Rock" property="valid" value=" Soft Rock"/>
+			<Value displayValue=" Swing" property="valid" value=" Swing"/>
+			<Value displayValue=" Upbeat Indie" property="valid" value=" Upbeat Indie"/>
+			<Value displayValue=" Vocalism" property="valid" value=" Vocalism"/>
+		</DataField>
+		<DataField dataType="double" displayName=" releasedate" name=" releasedate" optype="continuous">
+			<Extension extender="spss.com" name="format" value="5"/>
+			<Extension extender="spss.com" name="width" value="10"/>
+			<Extension extender="spss.com" name="decimals" value="3"/>
+		</DataField>
+		<DataField dataType="double" displayName=" popularity" name=" popularity" optype="continuous">
+			<Extension extender="spss.com" name="format" value="5"/>
+			<Extension extender="spss.com" name="width" value="10"/>
+			<Extension extender="spss.com" name="decimals" value="3"/>
+		</DataField>
+		<DataField dataType="double" displayName=" duration" name=" duration" optype="continuous">
+			<Extension extender="spss.com" name="format" value="5"/>
+			<Extension extender="spss.com" name="width" value="10"/>
+			<Extension extender="spss.com" name="decimals" value="3"/>
+		</DataField>
+		<DataField dataType="double" displayName=" tempo" name=" tempo" optype="continuous">
+			<Extension extender="spss.com" name="format" value="5"/>
+			<Extension extender="spss.com" name="width" value="10"/>
+			<Extension extender="spss.com" name="decimals" value="3"/>
+		</DataField>
+		<DataField dataType="double" displayName=" time_signature" name=" time_signature" optype="continuous">
+			<Extension extender="spss.com" name="format" value="5"/>
+			<Extension extender="spss.com" name="width" value="10"/>
+			<Extension extender="spss.com" name="decimals" value="3"/>
+		</DataField>
+		<DataField dataType="double" displayName=" key" name=" key" optype="continuous">
+			<Extension extender="spss.com" name="format" value="5"/>
+			<Extension extender="spss.com" name="width" value="10"/>
+			<Extension extender="spss.com" name="decimals" value="3"/>
+		</DataField>
+		<DataField dataType="double" displayName=" mode" name=" mode" optype="continuous">
+			<Extension extender="spss.com" name="format" value="5"/>
+			<Extension extender="spss.com" name="width" value="10"/>
+			<Extension extender="spss.com" name="decimals" value="3"/>
+		</DataField>
+		<DataField dataType="double" displayName=" loudness" name=" loudness" optype="continuous">
+			<Extension extender="spss.com" name="format" value="5"/>
+			<Extension extender="spss.com" name="width" value="10"/>
+			<Extension extender="spss.com" name="decimals" value="3"/>
+		</DataField>
+		<DataField dataType="double" displayName=" acousticness" name=" acousticness" optype="continuous">
+			<Extension extender="spss.com" name="format" value="5"/>
+			<Extension extender="spss.com" name="width" value="10"/>
+			<Extension extender="spss.com" name="decimals" value="3"/>
+		</DataField>
+		<DataField dataType="double" displayName=" danceability" name=" danceability" optype="continuous">
+			<Extension extender="spss.com" name="format" value="5"/>
+			<Extension extender="spss.com" name="width" value="10"/>
+			<Extension extender="spss.com" name="decimals" value="3"/>
+		</DataField>
+		<DataField dataType="double" displayName=" energy" name=" energy" optype="continuous">
+			<Extension extender="spss.com" name="format" value="5"/>
+			<Extension extender="spss.com" name="width" value="10"/>
+			<Extension extender="spss.com" name="decimals" value="3"/>
+		</DataField>
+		<DataField dataType="double" displayName=" instrumentalness" name=" instrumentalness" optype="continuous">
+			<Extension extender="spss.com" name="format" value="5"/>
+			<Extension extender="spss.com" name="width" value="10"/>
+			<Extension extender="spss.com" name="decimals" value="3"/>
+		</DataField>
+		<DataField dataType="double" displayName=" liveness" name=" liveness" optype="continuous">
+			<Extension extender="spss.com" name="format" value="5"/>
+			<Extension extender="spss.com" name="width" value="10"/>
+			<Extension extender="spss.com" name="decimals" value="3"/>
+		</DataField>
+		<DataField dataType="double" displayName=" speechiness" name=" speechiness" optype="continuous">
+			<Extension extender="spss.com" name="format" value="5"/>
+			<Extension extender="spss.com" name="width" value="10"/>
+			<Extension extender="spss.com" name="decimals" value="3"/>
+		</DataField>
+		<DataField dataType="double" displayName=" valence" name=" valence" optype="continuous">
+			<Extension extender="spss.com" name="format" value="5"/>
+			<Extension extender="spss.com" name="width" value="10"/>
+			<Extension extender="spss.com" name="decimals" value="3"/>
+		</DataField>
+	</DataDictionary>
+	<GeneralRegressionModel algorithmName="multinomialLogistic" functionName="classification" modelType="multinomialLogistic" targetVariableName=" playlist_name">
+		<Extension extender="spss.com" name="numberParameters" value="592"/>
+		<MiningSchema>
+			<MiningField missingValueTreatment="asIs" name=" playlist_name" usageType="predicted"/>
+			<MiningField missingValueTreatment="asIs" name=" releasedate" usageType="active"/>
+			<MiningField missingValueTreatment="asIs" name=" popularity" usageType="active"/>
+			<MiningField missingValueTreatment="asIs" name=" duration" usageType="active"/>
+			<MiningField missingValueTreatment="asIs" name=" tempo" usageType="active"/>
+			<MiningField missingValueTreatment="asIs" name=" time_signature" usageType="active"/>
+			<MiningField missingValueTreatment="asIs" name=" key" usageType="active"/>
+			<MiningField missingValueTreatment="asIs" name=" mode" usageType="active"/>
+			<MiningField missingValueTreatment="asIs" name=" loudness" usageType="active"/>
+			<MiningField missingValueTreatment="asIs" name=" acousticness" usageType="active"/>
+			<MiningField missingValueTreatment="asIs" name=" danceability" usageType="active"/>
+			<MiningField missingValueTreatment="asIs" name=" energy" usageType="active"/>
+			<MiningField missingValueTreatment="asIs" name=" instrumentalness" usageType="active"/>
+			<MiningField missingValueTreatment="asIs" name=" liveness" usageType="active"/>
+			<MiningField missingValueTreatment="asIs" name=" speechiness" usageType="active"/>
+			<MiningField missingValueTreatment="asIs" name=" valence" usageType="active"/>
+		</MiningSchema>
+		<ParameterList>
+			<Parameter label="Intercept" name="P0000001"/>
+			<Parameter label=" releasedate" name="P0000002"/>
+			<Parameter label=" popularity" name="P0000003"/>
+			<Parameter label=" duration" name="P0000004"/>
+			<Parameter label=" tempo" name="P0000005"/>
+			<Parameter label=" time_signature" name="P0000006"/>
+			<Parameter label=" key" name="P0000007"/>
+			<Parameter label=" mode" name="P0000008"/>
+			<Parameter label=" loudness" name="P0000009"/>
+			<Parameter label=" acousticness" name="P0000010"/>
+			<Parameter label=" danceability" name="P0000011"/>
+			<Parameter label=" energy" name="P0000012"/>
+			<Parameter label=" instrumentalness" name="P0000013"/>
+			<Parameter label=" liveness" name="P0000014"/>
+			<Parameter label=" speechiness" name="P0000015"/>
+			<Parameter label=" valence" name="P0000016"/>
+		</ParameterList>
+		<FactorList>
+		</FactorList>
+		<CovariateList>
+			<Predictor name=" releasedate"/>
+			<Predictor name=" popularity"/>
+			<Predictor name=" duration"/>
+			<Predictor name=" tempo"/>
+			<Predictor name=" time_signature"/>
+			<Predictor name=" key"/>
+			<Predictor name=" mode"/>
+			<Predictor name=" loudness"/>
+			<Predictor name=" acousticness"/>
+			<Predictor name=" danceability"/>
+			<Predictor name=" energy"/>
+			<Predictor name=" instrumentalness"/>
+			<Predictor name=" liveness"/>
+			<Predictor name=" speechiness"/>
+			<Predictor name=" valence"/>
+		</CovariateList>
+		<PPMatrix>
+			<PPCell parameterName="P0000002" predictorName=" releasedate" value="1"/>
+			<PPCell parameterName="P0000003" predictorName=" popularity" value="1"/>
+			<PPCell parameterName="P0000004" predictorName=" duration" value="1"/>
+			<PPCell parameterName="P0000005" predictorName=" tempo" value="1"/>
+			<PPCell parameterName="P0000006" predictorName=" time_signature" value="1"/>
+			<PPCell parameterName="P0000007" predictorName=" key" value="1"/>
+			<PPCell parameterName="P0000008" predictorName=" mode" value="1"/>
+			<PPCell parameterName="P0000009" predictorName=" loudness" value="1"/>
+			<PPCell parameterName="P0000010" predictorName=" acousticness" value="1"/>
+			<PPCell parameterName="P0000011" predictorName=" danceability" value="1"/>
+			<PPCell parameterName="P0000012" predictorName=" energy" value="1"/>
+			<PPCell parameterName="P0000013" predictorName=" instrumentalness" value="1"/>
+			<PPCell parameterName="P0000014" predictorName=" liveness" value="1"/>
+			<PPCell parameterName="P0000015" predictorName=" speechiness" value="1"/>
+			<PPCell parameterName="P0000016" predictorName=" valence" value="1"/>
+		</PPMatrix>
+		<ParamMatrix>
+			<PCell beta="-3836.67045513922" df="1" parameterName="P0000001" targetCategory="  Lofi"/>
+			<PCell beta="1.89559269788973" df="1" parameterName="P0000002" targetCategory="  Lofi"/>
+			<PCell beta="-0.0514015517263027" df="1" parameterName="P0000003" targetCategory="  Lofi"/>
+			<PCell beta="-3.60949800689205E-06" df="1" parameterName="P0000004" targetCategory="  Lofi"/>
+			<PCell beta="-0.00122915689492183" df="1" parameterName="P0000005" targetCategory="  Lofi"/>
+			<PCell beta="1.30352379740339" df="1" parameterName="P0000006" targetCategory="  Lofi"/>
+			<PCell beta="-0.245342781792114" df="1" parameterName="P0000007" targetCategory="  Lofi"/>
+			<PCell beta="-1.023859119011" df="1" parameterName="P0000008" targetCategory="  Lofi"/>
+			<PCell beta="-0.0594867674420058" df="1" parameterName="P0000009" targetCategory="  Lofi"/>
+			<PCell beta="6.492154129486" df="1" parameterName="P0000010" targetCategory="  Lofi"/>
+			<PCell beta="9.76909794897761" df="1" parameterName="P0000011" targetCategory="  Lofi"/>
+			<PCell beta="-10.6537881751086" df="1" parameterName="P0000012" targetCategory="  Lofi"/>
+			<PCell beta="10.0868434871606" df="1" parameterName="P0000013" targetCategory="  Lofi"/>
+			<PCell beta="-0.319860029929657" df="1" parameterName="P0000014" targetCategory="  Lofi"/>
+			<PCell beta="13.9536523508625" df="1" parameterName="P0000015" targetCategory="  Lofi"/>
+			<PCell beta="-5.94261599127362" df="1" parameterName="P0000016" targetCategory="  Lofi"/>
+			<PCell beta="-121.353310734676" df="1" parameterName="P0000001" targetCategory=" Acoustic"/>
+			<PCell beta="0.0544931826789934" df="1" parameterName="P0000002" targetCategory=" Acoustic"/>
+			<PCell beta="0.00888786340580515" df="1" parameterName="P0000003" targetCategory=" Acoustic"/>
+			<PCell beta="3.95661105885019E-06" df="1" parameterName="P0000004" targetCategory=" Acoustic"/>
+			<PCell beta="0.00844723046894729" df="1" parameterName="P0000005" targetCategory=" Acoustic"/>
+			<PCell beta="0.869312082300212" df="1" parameterName="P0000006" targetCategory=" Acoustic"/>
+			<PCell beta="-0.0695083290800497" df="1" parameterName="P0000007" targetCategory=" Acoustic"/>
+			<PCell beta="1.7431484921768" df="1" parameterName="P0000008" targetCategory=" Acoustic"/>
+			<PCell beta="-0.174148206910956" df="1" parameterName="P0000009" targetCategory=" Acoustic"/>
+			<PCell beta="4.47133010085265" df="1" parameterName="P0000010" targetCategory=" Acoustic"/>
+			<PCell beta="3.42759252282857" df="1" parameterName="P0000011" targetCategory=" Acoustic"/>
+			<PCell beta="-0.292641361711341" df="1" parameterName="P0000012" targetCategory=" Acoustic"/>
+			<PCell beta="-2.50795996116869" df="1" parameterName="P0000013" targetCategory=" Acoustic"/>
+			<PCell beta="2.14407387681567" df="1" parameterName="P0000014" targetCategory=" Acoustic"/>
+			<PCell beta="-7.06422848001349" df="1" parameterName="P0000015" targetCategory=" Acoustic"/>
+			<PCell beta="1.63317083774116" df="1" parameterName="P0000016" targetCategory=" Acoustic"/>
+			<PCell beta="-497.179265501486" df="1" parameterName="P0000001" targetCategory=" Chill"/>
+			<PCell beta="0.242632062021786" df="1" parameterName="P0000002" targetCategory=" Chill"/>
+			<PCell beta="-0.00249007386368859" df="1" parameterName="P0000003" targetCategory=" Chill"/>
+			<PCell beta="-4.7765574835392E-06" df="1" parameterName="P0000004" targetCategory=" Chill"/>
+			<PCell beta="0.0115297886861177" df="1" parameterName="P0000005" targetCategory=" Chill"/>
+			<PCell beta="0.68988637866625" df="1" parameterName="P0000006" targetCategory=" Chill"/>
+			<PCell beta="-0.115312486160201" df="1" parameterName="P0000007" targetCategory=" Chill"/>
+			<PCell beta="-0.215351184729893" df="1" parameterName="P0000008" targetCategory=" Chill"/>
+			<PCell beta="-0.1366370038857" df="1" parameterName="P0000009" targetCategory=" Chill"/>
+			<PCell beta="-0.484196741998331" df="1" parameterName="P0000010" targetCategory=" Chill"/>
+			<PCell beta="7.84826156767543" df="1" parameterName="P0000011" targetCategory=" Chill"/>
+			<PCell beta="0.084428808577256" df="1" parameterName="P0000012" targetCategory=" Chill"/>
+			<PCell beta="-1.83442425297722" df="1" parameterName="P0000013" targetCategory=" Chill"/>
+			<PCell beta="3.15545814321056" df="1" parameterName="P0000014" targetCategory=" Chill"/>
+			<PCell beta="6.71415116840388" df="1" parameterName="P0000015" targetCategory=" Chill"/>
+			<PCell beta="-0.707781873896395" df="1" parameterName="P0000016" targetCategory=" Chill"/>
+			<PCell beta="574.137258568713" df="1" parameterName="P0000001" targetCategory=" Classic"/>
+			<PCell beta="-0.291339788777588" df="1" parameterName="P0000002" targetCategory=" Classic"/>
+			<PCell beta="-0.0115330272816512" df="1" parameterName="P0000003" targetCategory=" Classic"/>
+			<PCell beta="9.34465854670329E-07" df="1" parameterName="P0000004" targetCategory=" Classic"/>
+			<PCell beta="0.00400802910348996" df="1" parameterName="P0000005" targetCategory=" Classic"/>
+			<PCell beta="0.284779888471311" df="1" parameterName="P0000006" targetCategory=" Classic"/>
+			<PCell beta="-0.0542609424053572" df="1" parameterName="P0000007" targetCategory=" Classic"/>
+			<PCell beta="0.0510769764980624" df="1" parameterName="P0000008" targetCategory=" Classic"/>
+			<PCell beta="-0.243720945893199" df="1" parameterName="P0000009" targetCategory=" Classic"/>
+			<PCell beta="0.880413737562751" df="1" parameterName="P0000010" targetCategory=" Classic"/>
+			<PCell beta="6.21753465799906" df="1" parameterName="P0000011" targetCategory=" Classic"/>
+			<PCell beta="5.03562389872565" df="1" parameterName="P0000012" targetCategory=" Classic"/>
+			<PCell beta="1.67720751139119" df="1" parameterName="P0000013" targetCategory=" Classic"/>
+			<PCell beta="4.70813250371311" df="1" parameterName="P0000014" targetCategory=" Classic"/>
+			<PCell beta="-10.1445336175098" df="1" parameterName="P0000015" targetCategory=" Classic"/>
+			<PCell beta="4.40457053154387" df="1" parameterName="P0000016" targetCategory=" Classic"/>
+			<PCell beta="405.648791036301" df="1" parameterName="P0000001" targetCategory=" Classic Hip Hop"/>
+			<PCell beta="-0.218011733356803" df="1" parameterName="P0000002" targetCategory=" Classic Hip Hop"/>
+			<PCell beta="-0.0148168953868653" df="1" parameterName="P0000003" targetCategory=" Classic Hip Hop"/>
+			<PCell beta="4.1009242928206E-06" df="1" parameterName="P0000004" targetCategory=" Classic Hip Hop"/>
+			<PCell beta="-0.00859982287447311" df="1" parameterName="P0000005" targetCategory=" Classic Hip Hop"/>
+			<PCell beta="3.1853379668768" df="1" parameterName="P0000006" targetCategory=" Classic Hip Hop"/>
+			<PCell beta="-0.126517319304966" df="1" parameterName="P0000007" targetCategory=" Classic Hip Hop"/>
+			<PCell beta="0.47551630123954" df="1" parameterName="P0000008" targetCategory=" Classic Hip Hop"/>
+			<PCell beta="-0.196861841680539" df="1" parameterName="P0000009" targetCategory=" Classic Hip Hop"/>
+			<PCell beta="-4.78524606642052" df="1" parameterName="P0000010" targetCategory=" Classic Hip Hop"/>
+			<PCell beta="20.3946942391684" df="1" parameterName="P0000011" targetCategory=" Classic Hip Hop"/>
+			<PCell beta="7.88034194750144" df="1" parameterName="P0000012" targetCategory=" Classic Hip Hop"/>
+			<PCell beta="-2.88277250662173" df="1" parameterName="P0000013" targetCategory=" Classic Hip Hop"/>
+			<PCell beta="2.00360087339733" df="1" parameterName="P0000014" targetCategory=" Classic Hip Hop"/>
+			<PCell beta="13.7794598117398" df="1" parameterName="P0000015" targetCategory=" Classic Hip Hop"/>
+			<PCell beta="1.18821391773382" df="1" parameterName="P0000016" targetCategory=" Classic Hip Hop"/>
+			<PCell beta="548.20178632293" df="1" parameterName="P0000001" targetCategory=" Classic Rock"/>
+			<PCell beta="-0.276963308957541" df="1" parameterName="P0000002" targetCategory=" Classic Rock"/>
+			<PCell beta="-0.015915379918212" df="1" parameterName="P0000003" targetCategory=" Classic Rock"/>
+			<PCell beta="1.20417411886093E-06" df="1" parameterName="P0000004" targetCategory=" Classic Rock"/>
+			<PCell beta="-0.00446586503064123" df="1" parameterName="P0000005" targetCategory=" Classic Rock"/>
+			<PCell beta="0.449746931352541" df="1" parameterName="P0000006" targetCategory=" Classic Rock"/>
+			<PCell beta="-0.00477614581016626" df="1" parameterName="P0000007" targetCategory=" Classic Rock"/>
+			<PCell beta="0.151227058475301" df="1" parameterName="P0000008" targetCategory=" Classic Rock"/>
+			<PCell beta="-0.259613402120962" df="1" parameterName="P0000009" targetCategory=" Classic Rock"/>
+			<PCell beta="-2.7495173469145" df="1" parameterName="P0000010" targetCategory=" Classic Rock"/>
+			<PCell beta="-2.0001414529151" df="1" parameterName="P0000011" targetCategory=" Classic Rock"/>
+			<PCell beta="10.5089396223417" df="1" parameterName="P0000012" targetCategory=" Classic Rock"/>
+			<PCell beta="2.88584636731553" df="1" parameterName="P0000013" targetCategory=" Classic Rock"/>
+			<PCell beta="4.97957235707412" df="1" parameterName="P0000014" targetCategory=" Classic Rock"/>
+			<PCell beta="-10.6987608004265" df="1" parameterName="P0000015" targetCategory=" Classic Rock"/>
+			<PCell beta="1.44913022378243" df="1" parameterName="P0000016" targetCategory=" Classic Rock"/>
+			<PCell beta="167.711208168352" df="1" parameterName="P0000001" targetCategory=" Classical"/>
+			<PCell beta="-0.0983595886757887" df="1" parameterName="P0000002" targetCategory=" Classical"/>
+			<PCell beta="-0.0113120343615087" df="1" parameterName="P0000003" targetCategory=" Classical"/>
+			<PCell beta="3.76223782363139E-05" df="1" parameterName="P0000004" targetCategory=" Classical"/>
+			<PCell beta="0.0119513772013202" df="1" parameterName="P0000005" targetCategory=" Classical"/>
+			<PCell beta="3.91079467265804" df="1" parameterName="P0000006" targetCategory=" Classical"/>
+			<PCell beta="0.270460203820444" df="1" parameterName="P0000007" targetCategory=" Classical"/>
+			<PCell beta="-0.346389053455212" df="1" parameterName="P0000008" targetCategory=" Classical"/>
+			<PCell beta="-0.451621930364034" df="1" parameterName="P0000009" targetCategory=" Classical"/>
+			<PCell beta="11.0856390066572" df="1" parameterName="P0000010" targetCategory=" Classical"/>
+			<PCell beta="-36.9415860645922" df="1" parameterName="P0000011" targetCategory=" Classical"/>
+			<PCell beta="-38.9271158645315" df="1" parameterName="P0000012" targetCategory=" Classical"/>
+			<PCell beta="12.9724385736397" df="1" parameterName="P0000013" targetCategory=" Classical"/>
+			<PCell beta="11.9357742581733" df="1" parameterName="P0000014" targetCategory=" Classical"/>
+			<PCell beta="-17.5239377254335" df="1" parameterName="P0000015" targetCategory=" Classical"/>
+			<PCell beta="25.4051187423323" df="1" parameterName="P0000016" targetCategory=" Classical"/>
+			<PCell beta="391.5907809492" df="1" parameterName="P0000001" targetCategory=" Country"/>
+			<PCell beta="-0.197082689142162" df="1" parameterName="P0000002" targetCategory=" Country"/>
+			<PCell beta="-0.0111369460974773" df="1" parameterName="P0000003" targetCategory=" Country"/>
+			<PCell beta="-1.11047135973677E-06" df="1" parameterName="P0000004" targetCategory=" Country"/>
+			<PCell beta="0.00232284204207401" df="1" parameterName="P0000005" targetCategory=" Country"/>
+			<PCell beta="-0.0286300512775301" df="1" parameterName="P0000006" targetCategory=" Country"/>
+			<PCell beta="0.0624120770873361" df="1" parameterName="P0000007" targetCategory=" Country"/>
+			<PCell beta="1.51399849132351" df="1" parameterName="P0000008" targetCategory=" Country"/>
+			<PCell beta="-0.0889266915299115" df="1" parameterName="P0000009" targetCategory=" Country"/>
+			<PCell beta="0.629232409571257" df="1" parameterName="P0000010" targetCategory=" Country"/>
+			<PCell beta="2.87520034236081" df="1" parameterName="P0000011" targetCategory=" Country"/>
+			<PCell beta="1.3763650307019" df="1" parameterName="P0000012" targetCategory=" Country"/>
+			<PCell beta="-20.9197815576081" df="1" parameterName="P0000013" targetCategory=" Country"/>
+			<PCell beta="6.19450680488596" df="1" parameterName="P0000014" targetCategory=" Country"/>
+			<PCell beta="-22.2524584321757" df="1" parameterName="P0000015" targetCategory=" Country"/>
+			<PCell beta="3.99869761197411" df="1" parameterName="P0000016" targetCategory=" Country"/>
+			<PCell beta="-271.7446194131" df="1" parameterName="P0000001" targetCategory=" Drain"/>
+			<PCell beta="0.135868054907185" df="1" parameterName="P0000002" targetCategory=" Drain"/>
+			<PCell beta="0.00515041193654897" df="1" parameterName="P0000003" targetCategory=" Drain"/>
+			<PCell beta="-1.99226869086656E-05" df="1" parameterName="P0000004" targetCategory=" Drain"/>
+			<PCell beta="0.00799126501141662" df="1" parameterName="P0000005" targetCategory=" Drain"/>
+			<PCell beta="0.12057018841597" df="1" parameterName="P0000006" targetCategory=" Drain"/>
+			<PCell beta="-0.0417395788625256" df="1" parameterName="P0000007" targetCategory=" Drain"/>
+			<PCell beta="-0.523347200141001" df="1" parameterName="P0000008" targetCategory=" Drain"/>
+			<PCell beta="0.0618133431895992" df="1" parameterName="P0000009" targetCategory=" Drain"/>
+			<PCell beta="-1.73685713818091" df="1" parameterName="P0000010" targetCategory=" Drain"/>
+			<PCell beta="3.7071394917699" df="1" parameterName="P0000011" targetCategory=" Drain"/>
+			<PCell beta="0.0170407254055551" df="1" parameterName="P0000012" targetCategory=" Drain"/>
+			<PCell beta="1.297636188243" df="1" parameterName="P0000013" targetCategory=" Drain"/>
+			<PCell beta="3.53187187527374" df="1" parameterName="P0000014" targetCategory=" Drain"/>
+			<PCell beta="5.89580520693861" df="1" parameterName="P0000015" targetCategory=" Drain"/>
+			<PCell beta="-2.20248269057923" df="1" parameterName="P0000016" targetCategory=" Drain"/>
+			<PCell beta="258.936652771895" df="1" parameterName="P0000001" targetCategory=" Dubstep"/>
+			<PCell beta="-0.134727439975806" df="1" parameterName="P0000002" targetCategory=" Dubstep"/>
+			<PCell beta="-0.0394479752940917" df="1" parameterName="P0000003" targetCategory=" Dubstep"/>
+			<PCell beta="-4.85071737962431E-06" df="1" parameterName="P0000004" targetCategory=" Dubstep"/>
+			<PCell beta="0.0132346902945476" df="1" parameterName="P0000005" targetCategory=" Dubstep"/>
+			<PCell beta="-1.11996886325261" df="1" parameterName="P0000006" targetCategory=" Dubstep"/>
+			<PCell beta="-0.0716451305865891" df="1" parameterName="P0000007" targetCategory=" Dubstep"/>
+			<PCell beta="0.095274402090634" df="1" parameterName="P0000008" targetCategory=" Dubstep"/>
+			<PCell beta="0.198638335365167" df="1" parameterName="P0000009" targetCategory=" Dubstep"/>
+			<PCell beta="-22.5983320973105" df="1" parameterName="P0000010" targetCategory=" Dubstep"/>
+			<PCell beta="12.9112101272431" df="1" parameterName="P0000011" targetCategory=" Dubstep"/>
+			<PCell beta="15.171992192835" df="1" parameterName="P0000012" targetCategory=" Dubstep"/>
+			<PCell beta="4.29337364941756" df="1" parameterName="P0000013" targetCategory=" Dubstep"/>
+			<PCell beta="6.30772863131784" df="1" parameterName="P0000014" targetCategory=" Dubstep"/>
+			<PCell beta="5.01733338314035" df="1" parameterName="P0000015" targetCategory=" Dubstep"/>
+			<PCell beta="-3.62956891850188" df="1" parameterName="P0000016" targetCategory=" Dubstep"/>
+			<PCell beta="-721.036510110631" df="1" parameterName="P0000001" targetCategory=" Funky"/>
+			<PCell beta="0.348337836353973" df="1" parameterName="P0000002" targetCategory=" Funky"/>
+			<PCell beta="0.0079999493595255" df="1" parameterName="P0000003" targetCategory=" Funky"/>
+			<PCell beta="-4.39862446269846E-06" df="1" parameterName="P0000004" targetCategory=" Funky"/>
+			<PCell beta="0.0111417854054497" df="1" parameterName="P0000005" targetCategory=" Funky"/>
+			<PCell beta="1.80759301221737" df="1" parameterName="P0000006" targetCategory=" Funky"/>
+			<PCell beta="-0.0334649265615243" df="1" parameterName="P0000007" targetCategory=" Funky"/>
+			<PCell beta="-0.0160232315320719" df="1" parameterName="P0000008" targetCategory=" Funky"/>
+			<PCell beta="-0.0900282883213622" df="1" parameterName="P0000009" targetCategory=" Funky"/>
+			<PCell beta="-3.00266112446017" df="1" parameterName="P0000010" targetCategory=" Funky"/>
+			<PCell beta="10.3262806039955" df="1" parameterName="P0000011" targetCategory=" Funky"/>
+			<PCell beta="3.20788616771961" df="1" parameterName="P0000012" targetCategory=" Funky"/>
+			<PCell beta="1.39885099245934" df="1" parameterName="P0000013" targetCategory=" Funky"/>
+			<PCell beta="3.54418371553622" df="1" parameterName="P0000014" targetCategory=" Funky"/>
+			<PCell beta="3.11918603343553" df="1" parameterName="P0000015" targetCategory=" Funky"/>
+			<PCell beta="3.30907503185554" df="1" parameterName="P0000016" targetCategory=" Funky"/>
+			<PCell beta="359.779613172147" df="1" parameterName="P0000001" targetCategory=" Groovy"/>
+			<PCell beta="-0.190715279738668" df="1" parameterName="P0000002" targetCategory=" Groovy"/>
+			<PCell beta="-0.0211890877821324" df="1" parameterName="P0000003" targetCategory=" Groovy"/>
+			<PCell beta="8.56493256738006E-06" df="1" parameterName="P0000004" targetCategory=" Groovy"/>
+			<PCell beta="-0.00267807645384449" df="1" parameterName="P0000005" targetCategory=" Groovy"/>
+			<PCell beta="2.42998125047799" df="1" parameterName="P0000006" targetCategory=" Groovy"/>
+			<PCell beta="-0.171509152268205" df="1" parameterName="P0000007" targetCategory=" Groovy"/>
+			<PCell beta="0.159480118585717" df="1" parameterName="P0000008" targetCategory=" Groovy"/>
+			<PCell beta="-0.243687406154342" df="1" parameterName="P0000009" targetCategory=" Groovy"/>
+			<PCell beta="-0.0157242673247314" df="1" parameterName="P0000010" targetCategory=" Groovy"/>
+			<PCell beta="10.3728713912443" df="1" parameterName="P0000011" targetCategory=" Groovy"/>
+			<PCell beta="5.14541371469762" df="1" parameterName="P0000012" targetCategory=" Groovy"/>
+			<PCell beta="3.66815321396047" df="1" parameterName="P0000013" targetCategory=" Groovy"/>
+			<PCell beta="4.83185971770479" df="1" parameterName="P0000014" targetCategory=" Groovy"/>
+			<PCell beta="2.16239587894375" df="1" parameterName="P0000015" targetCategory=" Groovy"/>
+			<PCell beta="4.00499113966842" df="1" parameterName="P0000016" targetCategory=" Groovy"/>
+			<PCell beta="-100.148625054288" df="1" parameterName="P0000001" targetCategory=" Hip Hop"/>
+			<PCell beta="0.0403183739287015" df="1" parameterName="P0000002" targetCategory=" Hip Hop"/>
+			<PCell beta="0.0180791916651272" df="1" parameterName="P0000003" targetCategory=" Hip Hop"/>
+			<PCell beta="-7.98782414562557E-06" df="1" parameterName="P0000004" targetCategory=" Hip Hop"/>
+			<PCell beta="0.0220328089975722" df="1" parameterName="P0000005" targetCategory=" Hip Hop"/>
+			<PCell beta="1.80813779519843" df="1" parameterName="P0000006" targetCategory=" Hip Hop"/>
+			<PCell beta="-0.0448020608075316" df="1" parameterName="P0000007" targetCategory=" Hip Hop"/>
+			<PCell beta="0.378578945373968" df="1" parameterName="P0000008" targetCategory=" Hip Hop"/>
+			<PCell beta="-0.00200321125612758" df="1" parameterName="P0000009" targetCategory=" Hip Hop"/>
+			<PCell beta="-2.56348725632618" df="1" parameterName="P0000010" targetCategory=" Hip Hop"/>
+			<PCell beta="15.2085601391473" df="1" parameterName="P0000011" targetCategory=" Hip Hop"/>
+			<PCell beta="1.93712515651212" df="1" parameterName="P0000012" targetCategory=" Hip Hop"/>
+			<PCell beta="-116.869595668202" df="1" parameterName="P0000013" targetCategory=" Hip Hop"/>
+			<PCell beta="4.51441650152468" df="1" parameterName="P0000014" targetCategory=" Hip Hop"/>
+			<PCell beta="10.7018042430659" df="1" parameterName="P0000015" targetCategory=" Hip Hop"/>
+			<PCell beta="-2.79379086759648" df="1" parameterName="P0000016" targetCategory=" Hip Hop"/>
+			<PCell beta="262.827665565066" df="1" parameterName="P0000001" targetCategory=" Jazz"/>
+			<PCell beta="-0.136766698547962" df="1" parameterName="P0000002" targetCategory=" Jazz"/>
+			<PCell beta="-0.165438995080871" df="1" parameterName="P0000003" targetCategory=" Jazz"/>
+			<PCell beta="1.17992686834272E-05" df="1" parameterName="P0000004" targetCategory=" Jazz"/>
+			<PCell beta="0.0131153974120596" df="1" parameterName="P0000005" targetCategory=" Jazz"/>
+			<PCell beta="2.47206404768595" df="1" parameterName="P0000006" targetCategory=" Jazz"/>
+			<PCell beta="-0.251572067824703" df="1" parameterName="P0000007" targetCategory=" Jazz"/>
+			<PCell beta="0.176850911739107" df="1" parameterName="P0000008" targetCategory=" Jazz"/>
+			<PCell beta="-0.0551043580909407" df="1" parameterName="P0000009" targetCategory=" Jazz"/>
+			<PCell beta="10.678864646067" df="1" parameterName="P0000010" targetCategory=" Jazz"/>
+			<PCell beta="-11.6431105369187" df="1" parameterName="P0000011" targetCategory=" Jazz"/>
+			<PCell beta="-3.03337480996605" df="1" parameterName="P0000012" targetCategory=" Jazz"/>
+			<PCell beta="7.34334060213516" df="1" parameterName="P0000013" targetCategory=" Jazz"/>
+			<PCell beta="6.72106665521145" df="1" parameterName="P0000014" targetCategory=" Jazz"/>
+			<PCell beta="-3.43392866247118" df="1" parameterName="P0000015" targetCategory=" Jazz"/>
+			<PCell beta="3.53178021465161" df="1" parameterName="P0000016" targetCategory=" Jazz"/>
+			<PCell beta="-175.949439002197" df="1" parameterName="P0000001" targetCategory=" K-pop"/>
+			<PCell beta="0.0749741810247393" df="1" parameterName="P0000002" targetCategory=" K-pop"/>
+			<PCell beta="-0.0180071365331353" df="1" parameterName="P0000003" targetCategory=" K-pop"/>
+			<PCell beta="3.65746857051653E-06" df="1" parameterName="P0000004" targetCategory=" K-pop"/>
+			<PCell beta="0.0172348577804058" df="1" parameterName="P0000005" targetCategory=" K-pop"/>
+			<PCell beta="2.43199623684333" df="1" parameterName="P0000006" targetCategory=" K-pop"/>
+			<PCell beta="-0.0471333799109588" df="1" parameterName="P0000007" targetCategory=" K-pop"/>
+			<PCell beta="-0.260507662909601" df="1" parameterName="P0000008" targetCategory=" K-pop"/>
+			<PCell beta="0.995004699353219" df="1" parameterName="P0000009" targetCategory=" K-pop"/>
+			<PCell beta="0.321700251497969" df="1" parameterName="P0000010" targetCategory=" K-pop"/>
+			<PCell beta="14.5075301172399" df="1" parameterName="P0000011" targetCategory=" K-pop"/>
+			<PCell beta="9.63622325598945" df="1" parameterName="P0000012" targetCategory=" K-pop"/>
+			<PCell beta="-45.6623321134051" df="1" parameterName="P0000013" targetCategory=" K-pop"/>
+			<PCell beta="0.818298101612865" df="1" parameterName="P0000014" targetCategory=" K-pop"/>
+			<PCell beta="6.1171546643217" df="1" parameterName="P0000015" targetCategory=" K-pop"/>
+			<PCell beta="1.13699528709805" df="1" parameterName="P0000016" targetCategory=" K-pop"/>
+			<PCell beta="553.021084002629" df="1" parameterName="P0000001" targetCategory=" Lounge"/>
+			<PCell beta="-0.274592176535329" df="1" parameterName="P0000002" targetCategory=" Lounge"/>
+			<PCell beta="-0.032082909490095" df="1" parameterName="P0000003" targetCategory=" Lounge"/>
+			<PCell beta="-1.50709483057624E-05" df="1" parameterName="P0000004" targetCategory=" Lounge"/>
+			<PCell beta="-0.00128972685142641" df="1" parameterName="P0000005" targetCategory=" Lounge"/>
+			<PCell beta="0.778797954556927" df="1" parameterName="P0000006" targetCategory=" Lounge"/>
+			<PCell beta="-0.205497909474445" df="1" parameterName="P0000007" targetCategory=" Lounge"/>
+			<PCell beta="0.679393840297758" df="1" parameterName="P0000008" targetCategory=" Lounge"/>
+			<PCell beta="-0.146770599476121" df="1" parameterName="P0000009" targetCategory=" Lounge"/>
+			<PCell beta="5.28261768168838" df="1" parameterName="P0000010" targetCategory=" Lounge"/>
+			<PCell beta="-5.88185731442353" df="1" parameterName="P0000011" targetCategory=" Lounge"/>
+			<PCell beta="-3.13502270417048" df="1" parameterName="P0000012" targetCategory=" Lounge"/>
+			<PCell beta="-1.53440357456213" df="1" parameterName="P0000013" targetCategory=" Lounge"/>
+			<PCell beta="7.67110096410008" df="1" parameterName="P0000014" targetCategory=" Lounge"/>
+			<PCell beta="-13.129289869583" df="1" parameterName="P0000015" targetCategory=" Lounge"/>
+			<PCell beta="3.66720328176599" df="1" parameterName="P0000016" targetCategory=" Lounge"/>
+			<PCell beta="311.272855506203" df="1" parameterName="P0000001" targetCategory=" Metal"/>
+			<PCell beta="-0.160244288994928" df="1" parameterName="P0000002" targetCategory=" Metal"/>
+			<PCell beta="-0.0184889483527765" df="1" parameterName="P0000003" targetCategory=" Metal"/>
+			<PCell beta="8.22509515802706E-06" df="1" parameterName="P0000004" targetCategory=" Metal"/>
+			<PCell beta="-0.00244076997973201" df="1" parameterName="P0000005" targetCategory=" Metal"/>
+			<PCell beta="-0.311054344237553" df="1" parameterName="P0000006" targetCategory=" Metal"/>
+			<PCell beta="-0.0909721131814326" df="1" parameterName="P0000007" targetCategory=" Metal"/>
+			<PCell beta="-0.150160482392422" df="1" parameterName="P0000008" targetCategory=" Metal"/>
+			<PCell beta="0.0989316697138054" df="1" parameterName="P0000009" targetCategory=" Metal"/>
+			<PCell beta="-61.4889794737633" df="1" parameterName="P0000010" targetCategory=" Metal"/>
+			<PCell beta="1.82507943561341" df="1" parameterName="P0000011" targetCategory=" Metal"/>
+			<PCell beta="17.5766100238571" df="1" parameterName="P0000012" targetCategory=" Metal"/>
+			<PCell beta="1.98862523830766" df="1" parameterName="P0000013" targetCategory=" Metal"/>
+			<PCell beta="3.28513131846715" df="1" parameterName="P0000014" targetCategory=" Metal"/>
+			<PCell beta="-1.01562055681722" df="1" parameterName="P0000015" targetCategory=" Metal"/>
+			<PCell beta="-1.39148393108955" df="1" parameterName="P0000016" targetCategory=" Metal"/>
+			<PCell beta="-242.592999731718" df="1" parameterName="P0000001" targetCategory=" New Beats"/>
+			<PCell beta="0.115214238063262" df="1" parameterName="P0000002" targetCategory=" New Beats"/>
+			<PCell beta="0.00828975462564343" df="1" parameterName="P0000003" targetCategory=" New Beats"/>
+			<PCell beta="-1.36034712602301E-05" df="1" parameterName="P0000004" targetCategory=" New Beats"/>
+			<PCell beta="0.0120963630992561" df="1" parameterName="P0000005" targetCategory=" New Beats"/>
+			<PCell beta="-0.0355921686308582" df="1" parameterName="P0000006" targetCategory=" New Beats"/>
+			<PCell beta="-0.0113451769464135" df="1" parameterName="P0000007" targetCategory=" New Beats"/>
+			<PCell beta="0.618329222605517" df="1" parameterName="P0000008" targetCategory=" New Beats"/>
+			<PCell beta="-0.097752019313308" df="1" parameterName="P0000009" targetCategory=" New Beats"/>
+			<PCell beta="-0.56880469026412" df="1" parameterName="P0000010" targetCategory=" New Beats"/>
+			<PCell beta="11.4352896052721" df="1" parameterName="P0000011" targetCategory=" New Beats"/>
+			<PCell beta="1.39366640441346" df="1" parameterName="P0000012" targetCategory=" New Beats"/>
+			<PCell beta="-76.7820577825637" df="1" parameterName="P0000013" targetCategory=" New Beats"/>
+			<PCell beta="4.71515930412218" df="1" parameterName="P0000014" targetCategory=" New Beats"/>
+			<PCell beta="6.29725466588884" df="1" parameterName="P0000015" targetCategory=" New Beats"/>
+			<PCell beta="1.89108288907052" df="1" parameterName="P0000016" targetCategory=" New Beats"/>
+			<PCell beta="58.1710701607187" df="1" parameterName="P0000001" targetCategory=" New Rock"/>
+			<PCell beta="-0.0293197320961678" df="1" parameterName="P0000002" targetCategory=" New Rock"/>
+			<PCell beta="-0.00651223917511586" df="1" parameterName="P0000003" targetCategory=" New Rock"/>
+			<PCell beta="-4.51929135467916E-06" df="1" parameterName="P0000004" targetCategory=" New Rock"/>
+			<PCell beta="0.00214330632950126" df="1" parameterName="P0000005" targetCategory=" New Rock"/>
+			<PCell beta="-0.521025625426593" df="1" parameterName="P0000006" targetCategory=" New Rock"/>
+			<PCell beta="-0.0903850779345392" df="1" parameterName="P0000007" targetCategory=" New Rock"/>
+			<PCell beta="-0.867048724750822" df="1" parameterName="P0000008" targetCategory=" New Rock"/>
+			<PCell beta="0.0905477754598809" df="1" parameterName="P0000009" targetCategory=" New Rock"/>
+			<PCell beta="-48.7781072431539" df="1" parameterName="P0000010" targetCategory=" New Rock"/>
+			<PCell beta="1.85866825224344" df="1" parameterName="P0000011" targetCategory=" New Rock"/>
+			<PCell beta="8.94916515980949" df="1" parameterName="P0000012" targetCategory=" New Rock"/>
+			<PCell beta="2.07401764169722" df="1" parameterName="P0000013" targetCategory=" New Rock"/>
+			<PCell beta="4.50923188590875" df="1" parameterName="P0000014" targetCategory=" New Rock"/>
+			<PCell beta="0.561036242711463" df="1" parameterName="P0000015" targetCategory=" New Rock"/>
+			<PCell beta="-3.03460965229637" df="1" parameterName="P0000016" targetCategory=" New Rock"/>
+			<PCell beta="155.440083916334" df="1" parameterName="P0000001" targetCategory=" Opera"/>
+			<PCell beta="-0.116589460771252" df="1" parameterName="P0000002" targetCategory=" Opera"/>
+			<PCell beta="-0.0183579519206539" df="1" parameterName="P0000003" targetCategory=" Opera"/>
+			<PCell beta="1.90940065373089E-05" df="1" parameterName="P0000004" targetCategory=" Opera"/>
+			<PCell beta="0.0201847972635736" df="1" parameterName="P0000005" targetCategory=" Opera"/>
+			<PCell beta="3.52225300066864" df="1" parameterName="P0000006" targetCategory=" Opera"/>
+			<PCell beta="0.356382775937212" df="1" parameterName="P0000007" targetCategory=" Opera"/>
+			<PCell beta="-0.741589138220503" df="1" parameterName="P0000008" targetCategory=" Opera"/>
+			<PCell beta="-0.303852261383201" df="1" parameterName="P0000009" targetCategory=" Opera"/>
+			<PCell beta="74.6996888052899" df="1" parameterName="P0000010" targetCategory=" Opera"/>
+			<PCell beta="-43.4165651648305" df="1" parameterName="P0000011" targetCategory=" Opera"/>
+			<PCell beta="-6.94700836844863" df="1" parameterName="P0000012" targetCategory=" Opera"/>
+			<PCell beta="3.59721000276045" df="1" parameterName="P0000013" targetCategory=" Opera"/>
+			<PCell beta="-6.46436787053787" df="1" parameterName="P0000014" targetCategory=" Opera"/>
+			<PCell beta="-0.131976905134401" df="1" parameterName="P0000015" targetCategory=" Opera"/>
+			<PCell beta="18.7156335746056" df="1" parameterName="P0000016" targetCategory=" Opera"/>
+			<PCell beta="-716.89988950135" df="1" parameterName="P0000001" targetCategory=" Pop Beats"/>
+			<PCell beta="0.344059777914882" df="1" parameterName="P0000002" targetCategory=" Pop Beats"/>
+			<PCell beta="0.0238297871070223" df="1" parameterName="P0000003" targetCategory=" Pop Beats"/>
+			<PCell beta="-1.27995515112933E-05" df="1" parameterName="P0000004" targetCategory=" Pop Beats"/>
+			<PCell beta="0.00120239702980629" df="1" parameterName="P0000005" targetCategory=" Pop Beats"/>
+			<PCell beta="1.88518358687143" df="1" parameterName="P0000006" targetCategory=" Pop Beats"/>
+			<PCell beta="-0.0632499817426367" df="1" parameterName="P0000007" targetCategory=" Pop Beats"/>
+			<PCell beta="0.141643538449606" df="1" parameterName="P0000008" targetCategory=" Pop Beats"/>
+			<PCell beta="-0.039298003328631" df="1" parameterName="P0000009" targetCategory=" Pop Beats"/>
+			<PCell beta="-0.867834041898906" df="1" parameterName="P0000010" targetCategory=" Pop Beats"/>
+			<PCell beta="16.1737801022942" df="1" parameterName="P0000011" targetCategory=" Pop Beats"/>
+			<PCell beta="6.4957837491517" df="1" parameterName="P0000012" targetCategory=" Pop Beats"/>
+			<PCell beta="2.61568927260407" df="1" parameterName="P0000013" targetCategory=" Pop Beats"/>
+			<PCell beta="3.63560061488982" df="1" parameterName="P0000014" targetCategory=" Pop Beats"/>
+			<PCell beta="-0.785033928452035" df="1" parameterName="P0000015" targetCategory=" Pop Beats"/>
+			<PCell beta="1.74399775959455" df="1" parameterName="P0000016" targetCategory=" Pop Beats"/>
+			<PCell beta="-131.973628173767" df="1" parameterName="P0000001" targetCategory=" Pop Rock"/>
+			<PCell beta="0.057845391925954" df="1" parameterName="P0000002" targetCategory=" Pop Rock"/>
+			<PCell beta="-0.00362650039874618" df="1" parameterName="P0000003" targetCategory=" Pop Rock"/>
+			<PCell beta="-1.42373219792506E-05" df="1" parameterName="P0000004" targetCategory=" Pop Rock"/>
+			<PCell beta="0.00501793086669744" df="1" parameterName="P0000005" targetCategory=" Pop Rock"/>
+			<PCell beta="2.16616654415705" df="1" parameterName="P0000006" targetCategory=" Pop Rock"/>
+			<PCell beta="-0.134790668944711" df="1" parameterName="P0000007" targetCategory=" Pop Rock"/>
+			<PCell beta="-1.34764829557988" df="1" parameterName="P0000008" targetCategory=" Pop Rock"/>
+			<PCell beta="-0.0416274821199189" df="1" parameterName="P0000009" targetCategory=" Pop Rock"/>
+			<PCell beta="-6.14978363740327" df="1" parameterName="P0000010" targetCategory=" Pop Rock"/>
+			<PCell beta="0.424100934430084" df="1" parameterName="P0000011" targetCategory=" Pop Rock"/>
+			<PCell beta="12.9867362277103" df="1" parameterName="P0000012" targetCategory=" Pop Rock"/>
+			<PCell beta="-5.08604986688758" df="1" parameterName="P0000013" targetCategory=" Pop Rock"/>
+			<PCell beta="2.96704529666068" df="1" parameterName="P0000014" targetCategory=" Pop Rock"/>
+			<PCell beta="1.51577139016155" df="1" parameterName="P0000015" targetCategory=" Pop Rock"/>
+			<PCell beta="0.506832496119282" df="1" parameterName="P0000016" targetCategory=" Pop Rock"/>
+			<PCell beta="100.636445799958" df="1" parameterName="P0000001" targetCategory=" Popsish"/>
+			<PCell beta="-0.0549956777181189" df="1" parameterName="P0000002" targetCategory=" Popsish"/>
+			<PCell beta="0.00404922669802554" df="1" parameterName="P0000003" targetCategory=" Popsish"/>
+			<PCell beta="-5.0032292509967E-06" df="1" parameterName="P0000004" targetCategory=" Popsish"/>
+			<PCell beta="0.0107631153590836" df="1" parameterName="P0000005" targetCategory=" Popsish"/>
+			<PCell beta="1.37859035941894" df="1" parameterName="P0000006" targetCategory=" Popsish"/>
+			<PCell beta="-0.109550036809341" df="1" parameterName="P0000007" targetCategory=" Popsish"/>
+			<PCell beta="0.296850440007114" df="1" parameterName="P0000008" targetCategory=" Popsish"/>
+			<PCell beta="0.268636509765182" df="1" parameterName="P0000009" targetCategory=" Popsish"/>
+			<PCell beta="-2.73519209163144" df="1" parameterName="P0000010" targetCategory=" Popsish"/>
+			<PCell beta="10.4487943345521" df="1" parameterName="P0000011" targetCategory=" Popsish"/>
+			<PCell beta="1.51616787197785" df="1" parameterName="P0000012" targetCategory=" Popsish"/>
+			<PCell beta="-4.40281658019054" df="1" parameterName="P0000013" targetCategory=" Popsish"/>
+			<PCell beta="3.37394546683112" df="1" parameterName="P0000014" targetCategory=" Popsish"/>
+			<PCell beta="4.28554580661376" df="1" parameterName="P0000015" targetCategory=" Popsish"/>
+			<PCell beta="-0.32061386828703" df="1" parameterName="P0000016" targetCategory=" Popsish"/>
+			<PCell beta="-189.674547177583" df="1" parameterName="P0000001" targetCategory=" Power"/>
+			<PCell beta="0.0933613570885821" df="1" parameterName="P0000002" targetCategory=" Power"/>
+			<PCell beta="0.00396675588834285" df="1" parameterName="P0000003" targetCategory=" Power"/>
+			<PCell beta="-1.17772133681708E-05" df="1" parameterName="P0000004" targetCategory=" Power"/>
+			<PCell beta="0.00702377124856711" df="1" parameterName="P0000005" targetCategory=" Power"/>
+			<PCell beta="0.441141585090185" df="1" parameterName="P0000006" targetCategory=" Power"/>
+			<PCell beta="-0.05874486919408" df="1" parameterName="P0000007" targetCategory=" Power"/>
+			<PCell beta="-0.120704444471213" df="1" parameterName="P0000008" targetCategory=" Power"/>
+			<PCell beta="0.0270854371832063" df="1" parameterName="P0000009" targetCategory=" Power"/>
+			<PCell beta="-3.02633885723492" df="1" parameterName="P0000010" targetCategory=" Power"/>
+			<PCell beta="2.36472524395154" df="1" parameterName="P0000011" targetCategory=" Power"/>
+			<PCell beta="0.408230801454057" df="1" parameterName="P0000012" targetCategory=" Power"/>
+			<PCell beta="-14.5320743252845" df="1" parameterName="P0000013" targetCategory=" Power"/>
+			<PCell beta="4.11231472683878" df="1" parameterName="P0000014" targetCategory=" Power"/>
+			<PCell beta="6.63145588102585" df="1" parameterName="P0000015" targetCategory=" Power"/>
+			<PCell beta="-0.308748647079465" df="1" parameterName="P0000016" targetCategory=" Power"/>
+			<PCell beta="541.935875849857" df="1" parameterName="P0000001" targetCategory=" Progressive"/>
+			<PCell beta="-0.283212839317736" df="1" parameterName="P0000002" targetCategory=" Progressive"/>
+			<PCell beta="0.0105884304695414" df="1" parameterName="P0000003" targetCategory=" Progressive"/>
+			<PCell beta="2.5987293255345E-05" df="1" parameterName="P0000004" targetCategory=" Progressive"/>
+			<PCell beta="-0.0050763411222115" df="1" parameterName="P0000005" targetCategory=" Progressive"/>
+			<PCell beta="3.05251166600374" df="1" parameterName="P0000006" targetCategory=" Progressive"/>
+			<PCell beta="-0.212144100369623" df="1" parameterName="P0000007" targetCategory=" Progressive"/>
+			<PCell beta="1.36119187370303" df="1" parameterName="P0000008" targetCategory=" Progressive"/>
+			<PCell beta="-0.258849576663915" df="1" parameterName="P0000009" targetCategory=" Progressive"/>
+			<PCell beta="1.32159140449009" df="1" parameterName="P0000010" targetCategory=" Progressive"/>
+			<PCell beta="1.65414390458708" df="1" parameterName="P0000011" targetCategory=" Progressive"/>
+			<PCell beta="5.75838711138393" df="1" parameterName="P0000012" targetCategory=" Progressive"/>
+			<PCell beta="2.49311043246938" df="1" parameterName="P0000013" targetCategory=" Progressive"/>
+			<PCell beta="8.22412656615964" df="1" parameterName="P0000014" targetCategory=" Progressive"/>
+			<PCell beta="-72.6690917946345" df="1" parameterName="P0000015" targetCategory=" Progressive"/>
+			<PCell beta="2.35593909421077" df="1" parameterName="P0000016" targetCategory=" Progressive"/>
+			<PCell beta="-469.655833742057" df="1" parameterName="P0000001" targetCategory=" Psychedelic"/>
+			<PCell beta="0.226932744489095" df="1" parameterName="P0000002" targetCategory=" Psychedelic"/>
+			<PCell beta="0.0138713135859475" df="1" parameterName="P0000003" targetCategory=" Psychedelic"/>
+			<PCell beta="6.27245181597332E-06" df="1" parameterName="P0000004" targetCategory=" Psychedelic"/>
+			<PCell beta="0.00826688404601977" df="1" parameterName="P0000005" targetCategory=" Psychedelic"/>
+			<PCell beta="0.476985732595832" df="1" parameterName="P0000006" targetCategory=" Psychedelic"/>
+			<PCell beta="-0.0528323055410241" df="1" parameterName="P0000007" targetCategory=" Psychedelic"/>
+			<PCell beta="0.109056562151689" df="1" parameterName="P0000008" targetCategory=" Psychedelic"/>
+			<PCell beta="-0.271596087370667" df="1" parameterName="P0000009" targetCategory=" Psychedelic"/>
+			<PCell beta="-0.927695406057878" df="1" parameterName="P0000010" targetCategory=" Psychedelic"/>
+			<PCell beta="5.43531486209106" df="1" parameterName="P0000011" targetCategory=" Psychedelic"/>
+			<PCell beta="3.74418221283267" df="1" parameterName="P0000012" targetCategory=" Psychedelic"/>
+			<PCell beta="2.70541882385808" df="1" parameterName="P0000013" targetCategory=" Psychedelic"/>
+			<PCell beta="3.51692335742969" df="1" parameterName="P0000014" targetCategory=" Psychedelic"/>
+			<PCell beta="-1.40584904622824" df="1" parameterName="P0000015" targetCategory=" Psychedelic"/>
+			<PCell beta="0.769474109152076" df="1" parameterName="P0000016" targetCategory=" Psychedelic"/>
+			<PCell beta="-807.278910360067" df="1" parameterName="P0000001" targetCategory=" Psychedelic Pop"/>
+			<PCell beta="0.394625154594091" df="1" parameterName="P0000002" targetCategory=" Psychedelic Pop"/>
+			<PCell beta="4.50675205702059E-05" df="1" parameterName="P0000003" targetCategory=" Psychedelic Pop"/>
+			<PCell beta="-3.24142762281007E-06" df="1" parameterName="P0000004" targetCategory=" Psychedelic Pop"/>
+			<PCell beta="0.0149731231411754" df="1" parameterName="P0000005" targetCategory=" Psychedelic Pop"/>
+			<PCell beta="0.491814712935316" df="1" parameterName="P0000006" targetCategory=" Psychedelic Pop"/>
+			<PCell beta="0.0879839556509729" df="1" parameterName="P0000007" targetCategory=" Psychedelic Pop"/>
+			<PCell beta="-0.0776784327438851" df="1" parameterName="P0000008" targetCategory=" Psychedelic Pop"/>
+			<PCell beta="-0.14704754299655" df="1" parameterName="P0000009" targetCategory=" Psychedelic Pop"/>
+			<PCell beta="-2.76551752454754" df="1" parameterName="P0000010" targetCategory=" Psychedelic Pop"/>
+			<PCell beta="6.05609134603534" df="1" parameterName="P0000011" targetCategory=" Psychedelic Pop"/>
+			<PCell beta="4.97413551651576" df="1" parameterName="P0000012" targetCategory=" Psychedelic Pop"/>
+			<PCell beta="1.10605044971054" df="1" parameterName="P0000013" targetCategory=" Psychedelic Pop"/>
+			<PCell beta="4.00744019025879" df="1" parameterName="P0000014" targetCategory=" Psychedelic Pop"/>
+			<PCell beta="-7.2361875946711" df="1" parameterName="P0000015" targetCategory=" Psychedelic Pop"/>
+			<PCell beta="-0.800949279883888" df="1" parameterName="P0000016" targetCategory=" Psychedelic Pop"/>
+			<PCell beta="262.994732842626" df="1" parameterName="P0000001" targetCategory=" Punk"/>
+			<PCell beta="-0.136344444156628" df="1" parameterName="P0000002" targetCategory=" Punk"/>
+			<PCell beta="0.0347946052930406" df="1" parameterName="P0000003" targetCategory=" Punk"/>
+			<PCell beta="-2.89717147093292E-05" df="1" parameterName="P0000004" targetCategory=" Punk"/>
+			<PCell beta="0.0127459902784068" df="1" parameterName="P0000005" targetCategory=" Punk"/>
+			<PCell beta="1.8199375865177" df="1" parameterName="P0000006" targetCategory=" Punk"/>
+			<PCell beta="-0.0379508930299666" df="1" parameterName="P0000007" targetCategory=" Punk"/>
+			<PCell beta="0.11954525517445" df="1" parameterName="P0000008" targetCategory=" Punk"/>
+			<PCell beta="-0.22313190161726" df="1" parameterName="P0000009" targetCategory=" Punk"/>
+			<PCell beta="-4.00955356383409" df="1" parameterName="P0000010" targetCategory=" Punk"/>
+			<PCell beta="0.932308025788863" df="1" parameterName="P0000011" targetCategory=" Punk"/>
+			<PCell beta="7.89308662109797" df="1" parameterName="P0000012" targetCategory=" Punk"/>
+			<PCell beta="-6.93837444132693" df="1" parameterName="P0000013" targetCategory=" Punk"/>
+			<PCell beta="4.03866019450233" df="1" parameterName="P0000014" targetCategory=" Punk"/>
+			<PCell beta="2.65178768315549" df="1" parameterName="P0000015" targetCategory=" Punk"/>
+			<PCell beta="-0.516910216448803" df="1" parameterName="P0000016" targetCategory=" Punk"/>
+			<PCell beta="-276.859951344901" df="1" parameterName="P0000001" targetCategory=" Punk Rock"/>
+			<PCell beta="0.13382889916501" df="1" parameterName="P0000002" targetCategory=" Punk Rock"/>
+			<PCell beta="0.00985604567775372" df="1" parameterName="P0000003" targetCategory=" Punk Rock"/>
+			<PCell beta="-2.03566158165084E-05" df="1" parameterName="P0000004" targetCategory=" Punk Rock"/>
+			<PCell beta="0.00892427276341711" df="1" parameterName="P0000005" targetCategory=" Punk Rock"/>
+			<PCell beta="0.707879453049009" df="1" parameterName="P0000006" targetCategory=" Punk Rock"/>
+			<PCell beta="-0.00717598907230291" df="1" parameterName="P0000007" targetCategory=" Punk Rock"/>
+			<PCell beta="0.648000552332583" df="1" parameterName="P0000008" targetCategory=" Punk Rock"/>
+			<PCell beta="-0.205201689936098" df="1" parameterName="P0000009" targetCategory=" Punk Rock"/>
+			<PCell beta="-4.75497191511144" df="1" parameterName="P0000010" targetCategory=" Punk Rock"/>
+			<PCell beta="-1.31715564982811" df="1" parameterName="P0000011" targetCategory=" Punk Rock"/>
+			<PCell beta="9.0960465077535" df="1" parameterName="P0000012" targetCategory=" Punk Rock"/>
+			<PCell beta="1.73236904228638" df="1" parameterName="P0000013" targetCategory=" Punk Rock"/>
+			<PCell beta="4.74085747637133" df="1" parameterName="P0000014" targetCategory=" Punk Rock"/>
+			<PCell beta="-12.7748465814493" df="1" parameterName="P0000015" targetCategory=" Punk Rock"/>
+			<PCell beta="0.840756389000414" df="1" parameterName="P0000016" targetCategory=" Punk Rock"/>
+			<PCell beta="277.348601804112" df="1" parameterName="P0000001" targetCategory=" Rap"/>
+			<PCell beta="-0.147163892823437" df="1" parameterName="P0000002" targetCategory=" Rap"/>
+			<PCell beta="0.0178609931012522" df="1" parameterName="P0000003" targetCategory=" Rap"/>
+			<PCell beta="4.67305339249243E-06" df="1" parameterName="P0000004" targetCategory=" Rap"/>
+			<PCell beta="0.000806884781962992" df="1" parameterName="P0000005" targetCategory=" Rap"/>
+			<PCell beta="-0.547757953827629" df="1" parameterName="P0000006" targetCategory=" Rap"/>
+			<PCell beta="-0.0888395644085437" df="1" parameterName="P0000007" targetCategory=" Rap"/>
+			<PCell beta="0.802337989403974" df="1" parameterName="P0000008" targetCategory=" Rap"/>
+			<PCell beta="-0.123101039967963" df="1" parameterName="P0000009" targetCategory=" Rap"/>
+			<PCell beta="-0.735617030886459" df="1" parameterName="P0000010" targetCategory=" Rap"/>
+			<PCell beta="17.9467802087084" df="1" parameterName="P0000011" targetCategory=" Rap"/>
+			<PCell beta="8.24883225438632" df="1" parameterName="P0000012" targetCategory=" Rap"/>
+			<PCell beta="-2.74605044663522" df="1" parameterName="P0000013" targetCategory=" Rap"/>
+			<PCell beta="2.26618635815196" df="1" parameterName="P0000014" targetCategory=" Rap"/>
+			<PCell beta="17.7299823801234" df="1" parameterName="P0000015" targetCategory=" Rap"/>
+			<PCell beta="-3.10940147986524" df="1" parameterName="P0000016" targetCategory=" Rap"/>
+			<PCell beta="-676.704196942089" df="1" parameterName="P0000001" targetCategory=" Relax"/>
+			<PCell beta="0.328995593798938" df="1" parameterName="P0000002" targetCategory=" Relax"/>
+			<PCell beta="0.0148046605235731" df="1" parameterName="P0000003" targetCategory=" Relax"/>
+			<PCell beta="-6.39082235527335E-06" df="1" parameterName="P0000004" targetCategory=" Relax"/>
+			<PCell beta="0.0109639522494492" df="1" parameterName="P0000005" targetCategory=" Relax"/>
+			<PCell beta="1.18371997828363" df="1" parameterName="P0000006" targetCategory=" Relax"/>
+			<PCell beta="-0.0768890975376568" df="1" parameterName="P0000007" targetCategory=" Relax"/>
+			<PCell beta="1.2024765334299" df="1" parameterName="P0000008" targetCategory=" Relax"/>
+			<PCell beta="-0.295081336833039" df="1" parameterName="P0000009" targetCategory=" Relax"/>
+			<PCell beta="0.540725407710545" df="1" parameterName="P0000010" targetCategory=" Relax"/>
+			<PCell beta="5.36339994322328" df="1" parameterName="P0000011" targetCategory=" Relax"/>
+			<PCell beta="1.43795773552501" df="1" parameterName="P0000012" targetCategory=" Relax"/>
+			<PCell beta="0.503740011246751" df="1" parameterName="P0000013" targetCategory=" Relax"/>
+			<PCell beta="3.811278477865" df="1" parameterName="P0000014" targetCategory=" Relax"/>
+			<PCell beta="0.602994063599537" df="1" parameterName="P0000015" targetCategory=" Relax"/>
+			<PCell beta="2.05146835149347" df="1" parameterName="P0000016" targetCategory=" Relax"/>
+			<PCell beta="93.8100363366976" df="1" parameterName="P0000001" targetCategory=" Rock"/>
+			<PCell beta="-0.0471103120738719" df="1" parameterName="P0000002" targetCategory=" Rock"/>
+			<PCell beta="-0.0237490556633923" df="1" parameterName="P0000003" targetCategory=" Rock"/>
+			<PCell beta="-7.07827181370337E-06" df="1" parameterName="P0000004" targetCategory=" Rock"/>
+			<PCell beta="-0.000441240312422879" df="1" parameterName="P0000005" targetCategory=" Rock"/>
+			<PCell beta="-0.542363453634773" df="1" parameterName="P0000006" targetCategory=" Rock"/>
+			<PCell beta="-0.114575038320468" df="1" parameterName="P0000007" targetCategory=" Rock"/>
+			<PCell beta="0.175589300991805" df="1" parameterName="P0000008" targetCategory=" Rock"/>
+			<PCell beta="-0.331128230323946" df="1" parameterName="P0000009" targetCategory=" Rock"/>
+			<PCell beta="-4.9311885382593" df="1" parameterName="P0000010" targetCategory=" Rock"/>
+			<PCell beta="-2.97800615102722" df="1" parameterName="P0000011" targetCategory=" Rock"/>
+			<PCell beta="8.73113724639409" df="1" parameterName="P0000012" targetCategory=" Rock"/>
+			<PCell beta="1.63820397619825" df="1" parameterName="P0000013" targetCategory=" Rock"/>
+			<PCell beta="3.51970289987455" df="1" parameterName="P0000014" targetCategory=" Rock"/>
+			<PCell beta="0.575554871458064" df="1" parameterName="P0000015" targetCategory=" Rock"/>
+			<PCell beta="1.76806768551969" df="1" parameterName="P0000016" targetCategory=" Rock"/>
+			<PCell beta="115.980555734707" df="1" parameterName="P0000001" targetCategory=" Slow Drain"/>
+			<PCell beta="-0.0571021883451677" df="1" parameterName="P0000002" targetCategory=" Slow Drain"/>
+			<PCell beta="0.0058844623728643" df="1" parameterName="P0000003" targetCategory=" Slow Drain"/>
+			<PCell beta="-6.61237663522163E-06" df="1" parameterName="P0000004" targetCategory=" Slow Drain"/>
+			<PCell beta="-0.0117622432626271" df="1" parameterName="P0000005" targetCategory=" Slow Drain"/>
+			<PCell beta="-0.0202724041923639" df="1" parameterName="P0000006" targetCategory=" Slow Drain"/>
+			<PCell beta="0.00595375645384686" df="1" parameterName="P0000007" targetCategory=" Slow Drain"/>
+			<PCell beta="-0.417058305377867" df="1" parameterName="P0000008" targetCategory=" Slow Drain"/>
+			<PCell beta="-0.0452736721401128" df="1" parameterName="P0000009" targetCategory=" Slow Drain"/>
+			<PCell beta="-2.12344465713021" df="1" parameterName="P0000010" targetCategory=" Slow Drain"/>
+			<PCell beta="2.56616019493523" df="1" parameterName="P0000011" targetCategory=" Slow Drain"/>
+			<PCell beta="-0.615611743177167" df="1" parameterName="P0000012" targetCategory=" Slow Drain"/>
+			<PCell beta="1.97480984336951" df="1" parameterName="P0000013" targetCategory=" Slow Drain"/>
+			<PCell beta="5.9043753826646" df="1" parameterName="P0000014" targetCategory=" Slow Drain"/>
+			<PCell beta="-2.14419747783802" df="1" parameterName="P0000015" targetCategory=" Slow Drain"/>
+			<PCell beta="-0.934134790850806" df="1" parameterName="P0000016" targetCategory=" Slow Drain"/>
+			<PCell beta="414.969265889002" df="1" parameterName="P0000001" targetCategory=" Soft"/>
+			<PCell beta="-0.20657100307514" df="1" parameterName="P0000002" targetCategory=" Soft"/>
+			<PCell beta="-0.00149053404534292" df="1" parameterName="P0000003" targetCategory=" Soft"/>
+			<PCell beta="2.52872324432604E-08" df="1" parameterName="P0000004" targetCategory=" Soft"/>
+			<PCell beta="0.000827272993562055" df="1" parameterName="P0000005" targetCategory=" Soft"/>
+			<PCell beta="0.250802726430911" df="1" parameterName="P0000006" targetCategory=" Soft"/>
+			<PCell beta="-0.120497293018973" df="1" parameterName="P0000007" targetCategory=" Soft"/>
+			<PCell beta="1.21881980643031" df="1" parameterName="P0000008" targetCategory=" Soft"/>
+			<PCell beta="0.020530155267791" df="1" parameterName="P0000009" targetCategory=" Soft"/>
+			<PCell beta="0.663897413606305" df="1" parameterName="P0000010" targetCategory=" Soft"/>
+			<PCell beta="2.21988011122024" df="1" parameterName="P0000011" targetCategory=" Soft"/>
+			<PCell beta="-1.33427974072837" df="1" parameterName="P0000012" targetCategory=" Soft"/>
+			<PCell beta="-1.19392982406193" df="1" parameterName="P0000013" targetCategory=" Soft"/>
+			<PCell beta="2.91971817891266" df="1" parameterName="P0000014" targetCategory=" Soft"/>
+			<PCell beta="-3.02080271843813" df="1" parameterName="P0000015" targetCategory=" Soft"/>
+			<PCell beta="0.73202360875094" df="1" parameterName="P0000016" targetCategory=" Soft"/>
+			<PCell beta="453.103495596278" df="1" parameterName="P0000001" targetCategory=" Soft Rock"/>
+			<PCell beta="-0.233770328827301" df="1" parameterName="P0000002" targetCategory=" Soft Rock"/>
+			<PCell beta="-0.00779414600368982" df="1" parameterName="P0000003" targetCategory=" Soft Rock"/>
+			<PCell beta="1.64449426975363E-06" df="1" parameterName="P0000004" targetCategory=" Soft Rock"/>
+			<PCell beta="-0.00663107624627961" df="1" parameterName="P0000005" targetCategory=" Soft Rock"/>
+			<PCell beta="2.96209624351201" df="1" parameterName="P0000006" targetCategory=" Soft Rock"/>
+			<PCell beta="-0.0361377945479346" df="1" parameterName="P0000007" targetCategory=" Soft Rock"/>
+			<PCell beta="0.0364330345748175" df="1" parameterName="P0000008" targetCategory=" Soft Rock"/>
+			<PCell beta="-0.0750851232463744" df="1" parameterName="P0000009" targetCategory=" Soft Rock"/>
+			<PCell beta="-0.681125089738704" df="1" parameterName="P0000010" targetCategory=" Soft Rock"/>
+			<PCell beta="1.08123767320561" df="1" parameterName="P0000011" targetCategory=" Soft Rock"/>
+			<PCell beta="6.16954153190686" df="1" parameterName="P0000012" targetCategory=" Soft Rock"/>
+			<PCell beta="2.31677413480242" df="1" parameterName="P0000013" targetCategory=" Soft Rock"/>
+			<PCell beta="4.53375841264823" df="1" parameterName="P0000014" targetCategory=" Soft Rock"/>
+			<PCell beta="-18.7663120557601" df="1" parameterName="P0000015" targetCategory=" Soft Rock"/>
+			<PCell beta="2.46588263717867" df="1" parameterName="P0000016" targetCategory=" Soft Rock"/>
+			<PCell beta="531.482648131277" df="1" parameterName="P0000001" targetCategory=" Swing"/>
+			<PCell beta="-0.268938817518921" df="1" parameterName="P0000002" targetCategory=" Swing"/>
+			<PCell beta="-0.0232722404232971" df="1" parameterName="P0000003" targetCategory=" Swing"/>
+			<PCell beta="-1.82380299777099E-05" df="1" parameterName="P0000004" targetCategory=" Swing"/>
+			<PCell beta="0.00466091024969249" df="1" parameterName="P0000005" targetCategory=" Swing"/>
+			<PCell beta="0.960428014635486" df="1" parameterName="P0000006" targetCategory=" Swing"/>
+			<PCell beta="-0.192019575390558" df="1" parameterName="P0000007" targetCategory=" Swing"/>
+			<PCell beta="0.881379994378691" df="1" parameterName="P0000008" targetCategory=" Swing"/>
+			<PCell beta="-0.214942374539104" df="1" parameterName="P0000009" targetCategory=" Swing"/>
+			<PCell beta="5.14494827894359" df="1" parameterName="P0000010" targetCategory=" Swing"/>
+			<PCell beta="0.340316100445103" df="1" parameterName="P0000011" targetCategory=" Swing"/>
+			<PCell beta="-3.42865613307317" df="1" parameterName="P0000012" targetCategory=" Swing"/>
+			<PCell beta="-4.63210791061725" df="1" parameterName="P0000013" targetCategory=" Swing"/>
+			<PCell beta="4.71826077929925" df="1" parameterName="P0000014" targetCategory=" Swing"/>
+			<PCell beta="0.663596510034045" df="1" parameterName="P0000015" targetCategory=" Swing"/>
+			<PCell beta="10.5975306374356" df="1" parameterName="P0000016" targetCategory=" Swing"/>
+			<PCell beta="-800.758900931502" df="1" parameterName="P0000001" targetCategory=" Upbeat Indie"/>
+			<PCell beta="0.392385066783048" df="1" parameterName="P0000002" targetCategory=" Upbeat Indie"/>
+			<PCell beta="0.00204340519973709" df="1" parameterName="P0000003" targetCategory=" Upbeat Indie"/>
+			<PCell beta="-9.67011256356486E-06" df="1" parameterName="P0000004" targetCategory=" Upbeat Indie"/>
+			<PCell beta="0.0192397813991661" df="1" parameterName="P0000005" targetCategory=" Upbeat Indie"/>
+			<PCell beta="0.316019096602877" df="1" parameterName="P0000006" targetCategory=" Upbeat Indie"/>
+			<PCell beta="-0.0111891887512362" df="1" parameterName="P0000007" targetCategory=" Upbeat Indie"/>
+			<PCell beta="0.953785689600568" df="1" parameterName="P0000008" targetCategory=" Upbeat Indie"/>
+			<PCell beta="-0.225904762737556" df="1" parameterName="P0000009" targetCategory=" Upbeat Indie"/>
+			<PCell beta="-2.96110586986907" df="1" parameterName="P0000010" targetCategory=" Upbeat Indie"/>
+			<PCell beta="4.20870766713789" df="1" parameterName="P0000011" targetCategory=" Upbeat Indie"/>
+			<PCell beta="4.82863221175873" df="1" parameterName="P0000012" targetCategory=" Upbeat Indie"/>
+			<PCell beta="0.470805857317362" df="1" parameterName="P0000013" targetCategory=" Upbeat Indie"/>
+			<PCell beta="3.85065784007138" df="1" parameterName="P0000014" targetCategory=" Upbeat Indie"/>
+			<PCell beta="-9.23795794155569" df="1" parameterName="P0000015" targetCategory=" Upbeat Indie"/>
+			<PCell beta="1.4780067598275" df="1" parameterName="P0000016" targetCategory=" Upbeat Indie"/>
+		</ParamMatrix>
+	</GeneralRegressionModel>
+</PMML>
