@@ -143,25 +143,22 @@ def DiscoverAllArtists():
 def sortLogistic(playlist_uri=discoartisturi, confidence=.3):
     #sort songs based on generated logisitic regression
     error_count = 0
-    model = Model.load('logistic_output_pmml.xml')
-    #model.inputNames = ["artist","releasedate","popularity","duration","tempo","time_signature","key","mode","loudness","acousticness","danceability","energy","instrumentalness","liveness","speechiness","valence"]
+    model = Model.load('logistic_output_pmml.xml') #load model file with pypmml
 
     for song in sp.playlist_tracks(playlist_uri)["items"]:
-
             song_data_input = []
-            try:
+            try: #get data for song
                 song_track = sp.track(song["track"]["id"])
                 song_features = sp.audio_features(song["track"]["id"])
-            except:
+            except: #in case of timeout
                 print("Error for track: ", song["track"]["name"])
-                error_count += 1
+                error_count += 1 
                 continue
             song_data_input = [song_track["album"]["release_date"][:4], song_track["popularity"],song_features[0]["duration_ms"],song_features[0]["tempo"],song_features[0]["time_signature"],song_features[0]["key"],song_features[0]["mode"],song_features[0]["loudness"],song_features[0]["acousticness"],song_features[0]["danceability"],song_features[0]["energy"], song_features[0]["instrumentalness"],song_features[0]["liveness"],song_features[0]["speechiness"],song_features[0]["valence"]]
-
+            #predict using model
             song_data_output = model.predict(song_data_input)
-            #pp(song_data_output)
             
-            if song_data_output[1] > confidence:
+            if song_data_output[1] > confidence: #check if low confidence
                 #get playlist id
                 playlist_to_append = getPlaylistID(song_data_output[0].strip())
                 if playlist_to_append == 'error': #if playlist doesn't already exist
@@ -176,7 +173,6 @@ def sortLogistic(playlist_uri=discoartisturi, confidence=.3):
                 #failed - low confidence
                 print("Did NOT add ",song_track["name"]," to playlist ",song_data_output[0].strip()," with confidence ",song_data_output[1])
                 
-            #pp(model.outputNames)
             
 
 
