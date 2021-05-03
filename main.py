@@ -73,13 +73,16 @@ def DiscoverWeeklyArtists():
             pass
         usedvalues.append(oldsong)
         sp.user_playlist_add_tracks(usernamevar, discoartisturi, [oldsong])
+        print("Added discover track: ",track_week["track"]["name"])
         if newsong not in usedvalues:
             sp.user_playlist_add_tracks(usernamevar, discoartisturi, [newsong])
             usedvalues.append(newsong)
+            print("Added top track: ",sp.artist_top_tracks(track_week["track"]["artists"][0]["uri"])["tracks"][0]["name"])
         try:
             if newsong2 not in usedvalues:
                 sp.user_playlist_add_tracks(usernamevar, discoartisturi, [newsong2])
                 usedvalues.append(newsong2)
+                print("Added top track 2: ",sp.artist_top_tracks(track_week["track"]["artists"][0]["uri"])["tracks"][1]["name"])
         except:
             pass
     selection = input("Would you like to run auto-sort? (y/n) : ")
